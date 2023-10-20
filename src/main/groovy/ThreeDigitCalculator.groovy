@@ -1,7 +1,7 @@
 class ThreeDigitCalculator {
     void validateInputs(int a, int b) {
         if ([a, b].any { it < 0 }) {
-            throw new RuntimeException("Number must be non-negative")
+            throw new RuntimeException("Numbers must be non-negative")
         }
         if ([a, b].any { it > 999 }) {
             throw new RuntimeException("Numbers must not exceed 999")
@@ -38,6 +38,4 @@ class ThreeDigitCalculator {
             }
         }
     }
-
-
 }
